@@ -35,7 +35,8 @@ Step 2:
 ````python
 from DeepEnsemble.DeepEnsemble import DeepEnsembler
 
-Y_pred_ensembled = DeepEnsembler(Y_pred, Y_actual, type=None, predThreshold=0.5, metrics="accuracy_score")
+Ensembler = DeepEnsembler(Y_pred, Y_actual, type=None, predThreshold=0.5, metrics="accuracy_score")
+score,Y_pred_ensembled = Ensembler.WeightedEnsembling()
 
 ````
 Note:
@@ -53,7 +54,18 @@ Y_Pred = np.array([results of model1],
                   [results of model3],
                    ....)
 Y_actual = np.array([actual class])
-DeepEnsembler(Y_Pred, Y_actual, type="Weighted", predThreshold=0.6, metrics="cohen_kappa_score")
+
+---Example1:
+Ensembler = DeepEnsembler(Y_Pred, Y_actual, type="Weighted", predThreshold=0.6, metrics="cohen_kappa_score")
+score,Y_pred_ensembled = Ensembler.WeightedClassifier()
+
+---Example2:
+Ensembler = DeepEnsembler(Y_Pred, Y_actual, type="Voting", predThreshold=0.6, metrics="cohen_kappa_score")
+score,Y_pred_ensembled = Ensembler.VotingClassifier()
+
+---Example3:
+Ensembler = DeepEnsembler(Y_Pred, Y_actual, type="Stacking", predThreshold=0.6, metrics="cohen_kappa_score")
+score,Y_pred_ensembled = Ensembler.StackingClassifier()
 ````
 
 ## Parameters

@@ -12,7 +12,7 @@ setuptools.setup(
      description="An Wrapper for performing ensembling techniques on deep learning models",
      long_description=long_description,
    long_description_content_type="text/markdown",
-     url="https://github.com/DataPreprocessing/DataCleaning",
+     url="https://github.com/induraj2020/DeepEnsemble.git",
      packages=setuptools.find_packages(),
      classifiers=[
          'Development Status :: 3 - Alpha',

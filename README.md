@@ -25,7 +25,7 @@ Step 1:
   Install the libaray
 
 ````python
-pip install deep-ensemble==0.1
+pip install DeepEnsemble
 ````
 Step 2:
 

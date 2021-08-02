@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-     name='deep-ensemble',
-     version='0.1',
+     name='deepensemble',
+     version='0.2',
      scripts=['DeepEnsemble'] ,
      author="Induraj P.Ramamurthy",
      author_email="induraj.gandhian@yahoo.com",

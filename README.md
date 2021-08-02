@@ -7,6 +7,8 @@
 - What this does?
     * Gets array of predictions(probabilities)
     * Performs ensembling
+    * Returns Score of the metrics(user prefers)
+    * Returns Y_predicted resulting due to ensembling
     
 - Ensembling Techniques included
     * Weighted Ensembling

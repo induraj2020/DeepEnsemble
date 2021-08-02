@@ -31,9 +31,9 @@ Step 2:
 
   Import the library, and specify the path of the csv file. 
 ````python
-from DeepEnsemble import DeepEnsembler
+from DeepEnsemble.DeepEnsemble import DeepEnsembler
 
-ensembler = DeepEnsembler(Y_pred, Y_actual, type=None, predThreshold=0.5, metrics="accuracy_score")
+Y_pred_ensembled = DeepEnsembler(Y_pred, Y_actual, type=None, predThreshold=0.5, metrics="accuracy_score")
 
 ````
 Note:
@@ -45,7 +45,7 @@ Note:
 ## Usage:
 
 ````python
-from DeepEnsemble import DeepEnsembler
+from DeepEnsemble.DeepEnsemble import DeepEnsembler
 Y_Pred = np.array([results of model1],
                   [results of model2],
                   [results of model3],
